@@ -1,0 +1,5 @@
+install.packages("qqman")
+library("qqman")
+LabadorfResults<-read.table("C:/2017_Research/Manhattan_Plot/pValues_Labadorf.csv", sep = ",", header = TRUE)
+manhattan(LabadorfResults)
+manhattan(LabadorfResults, main = " Labadorf Manhattan Plot")

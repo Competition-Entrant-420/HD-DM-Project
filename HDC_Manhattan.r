@@ -1,0 +1,5 @@
+install.packages("qqman")
+library("qqman")
+HD_ConsortiumResults<-read.table("C:/2017_Research/Manhattan_Plot/pValues_HDConsortium.csv", sep = ",", header = TRUE)
+manhattan(HD_ConsortiumResults)
+manhattan(HD_ConsortiumResults, main = " HD Consortium Manhattan Plot")
